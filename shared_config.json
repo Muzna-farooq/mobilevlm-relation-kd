@@ -1,0 +1,55 @@
+{
+  "profile": "main",
+  "seed": 42,
+  "teacher_checkpoint": "mtgv/MobileVLM_V2-7B",
+  "student_checkpoint": "mtgv/MobileVLM_V2-3B",
+  "data_dir": "/kaggle/input/datasets/djihadelhakbelkhir/gqa-kd/gqa_v2_seed42",
+  "output_dir": "/kaggle/working/muzna_relation_kd_testdev",
+  "train_file": "train_2000",
+  "validation_file": "dev",
+  "train_limit": null,
+  "validation_limit": null,
+  "conversation_template": "v1",
+  "answer_suffix": "\nAnswer the question using a single word or phrase.",
+  "max_sequence_length": 1024,
+  "max_new_tokens": 16,
+  "epochs": 1,
+  "micro_batch_size": 1,
+  "gradient_accumulation": 16,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.0,
+  "warmup_ratio": 0.03,
+  "max_grad_norm": 1.0,
+  "precision": "fp16",
+  "optimizer": "AdamW",
+  "scheduler": "cosine",
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "lora_targets": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj"
+  ],
+  "vision_encoder_trainable": false,
+  "projector_trainable": false,
+  "do_sample": false,
+  "num_beams": 1,
+  "versions": {
+    "source_commit": "688fdec914810485c8766da96c63d9d2ce15f750",
+    "teacher_revision": "bc4a97b5fdab48163f8d1c7edca474a2c614482b",
+    "student_revision": "a985787d31160f7f847cdb88a59e6954bbc421aa",
+    "vision_revision": "ce19dc912ca5cd21c8a653c79e251e808ccabcd1"
+  },
+  "selected_id_hashes": {
+    "train": "69f49eda3673fe3febc612e2f22b232af92f8f2c8cbfc0051a71f3636c72dcc0",
+    "validation": "d51318b46c4018d9a86578fe916a426cb227006ae0f763ee8f90022d92995710"
+  },
+  "dataset_hashes": {
+    "train_2000": "d3224f2107b1242c5f2a2a30efc1ce716f4604cce846c570163d0332ec49ae96",
+    "dev": "4650f2a121ae1e68014442c0a297e01565dc1def8ce0a2936dd64a66570d74f9",
+    "testdev": "ff2c89a2960b68994c25f2b878221552edf92eed410b330625a3b24017c21710"
+  },
+  "checkpoint_every_updates": 200
+}

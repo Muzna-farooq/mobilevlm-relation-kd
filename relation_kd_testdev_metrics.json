@@ -1,0 +1,24 @@
+{
+  "n": 12578,
+  "accuracy": {
+    "all": 0.6066942280171729,
+    "semantic:global": 0.5605095541401274,
+    "structural:query": 0.4653930933137399,
+    "structural:verify": 0.8090586145648313,
+    "semantic:attr": 0.6704589278827613,
+    "structural:compare": 0.6434634974533107,
+    "semantic:cat": 0.5073977371627503,
+    "semantic:rel": 0.5292012057272042,
+    "structural:choose": 0.8104517271922055,
+    "structural:logical": 0.747642817526345,
+    "semantic:obj": 0.8663239074550129
+  },
+  "latency_ms_mean": 218.4868115040368,
+  "tokens_per_s_mean": 14.816054256137196,
+  "peak_gpu_memory_mb": 6323.289088,
+  "parameters": 3024759296,
+  "model_name": "student_3b_relation_kd",
+  "split": "testdev",
+  "profile": "main",
+  "timing_note": "LoRA unmerged; generation only, excluding image preprocessing"
+}

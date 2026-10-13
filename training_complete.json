@@ -1,0 +1,8 @@
+{
+  "examples": 26155,
+  "optimizer_updates": 1635,
+  "total_loss_mean": 0.37739229332855073,
+  "gt_loss_mean": 0.3586987735767274,
+  "relation_loss_mean": 0.01869351985476038,
+  "lambda_relation": 1.0
+}
